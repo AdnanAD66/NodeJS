@@ -8,3 +8,7 @@ Followed ECMA Standard
 JavaScript handle synchronous task effectively while we use libuv in NodeJS to handle Async task effectively.
 
 client side javascript use browser for Asynchronous task while on server NodeJs use Libuv
+
+we get module and require in nodeJS using IIFE function argument and parameter
+
+NodeJS passes modules as a parameter to IIFE function
