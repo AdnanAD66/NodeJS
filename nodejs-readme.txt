@@ -12,3 +12,7 @@ client side javascript use browser for Asynchronous task while on server NodeJs 
 we get module and require in nodeJS using IIFE function argument and parameter
 
 NodeJS passes modules as a parameter to IIFE function
+
+variable and function wrap in IIFE function so they cannot be accessable directly .
+
+NodeJS is non-blocking io because of Libuv.
