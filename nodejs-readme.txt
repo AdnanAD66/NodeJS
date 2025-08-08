@@ -16,3 +16,12 @@ NodeJS passes modules as a parameter to IIFE function
 variable and function wrap in IIFE function so they cannot be accessable directly .
 
 NodeJS is non-blocking io because of Libuv.
+
+
+// Express js
+
+npm init
+
+npm install express
+
+If by mistake we delete node_modules folder then we can restore it by running 'npm install' command in terminal.
