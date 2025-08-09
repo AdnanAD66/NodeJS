@@ -18,7 +18,7 @@ variable and function wrap in IIFE function so they cannot be accessable directl
 NodeJS is non-blocking io because of Libuv.
 
 
-// Express js
+// ExpressJS
 
 npm init
 

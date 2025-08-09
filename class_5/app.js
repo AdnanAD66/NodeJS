@@ -1,3 +1,5 @@
+// ExpressJS
+
 // Creating first Server
 
 const express = require('express')
@@ -9,7 +11,12 @@ const app = express()
 
 // Route   // Route Handler
 app.get('/', (req, res) => {  
-    res.send('Hello World!')
+    res.send(
+        {
+            name: "Adnan",
+            course: 'Web And App Development'
+        }
+    )
 })
 
 app.listen(3000, () => {
