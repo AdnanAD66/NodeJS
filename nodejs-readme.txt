@@ -25,3 +25,9 @@ npm init
 npm install express
 
 If by mistake we delete node_modules folder then we can restore it by running 'npm install' command in terminal.
+
+'npm i nodemon -g' for global installation of nodemon and now we can run our app using 'nodemon src/app.js' command. 
+
+now we donot need to restart our server manually when we make changes in our code.
+
+app.use(express.json()) // to parse incoming JSON requests
