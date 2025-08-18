@@ -81,6 +81,63 @@ app.put('/updateproduct', (req, res) => {
 })
 
 
+//params
+
+app.get('/product/:id', (req, res) => {
+    const params = req.params
+    const product = myProducts.find((p) => p.id === parseInt(params.id) )
+    if (product) {
+
+        res.send('Product id ======>' + params.id)
+        
+    }else{
+        res.status(404).send('Product Not Found')
+    }
+})
+
+
+
+// to handle all incoming requests at the same route.
+
+app.use('/allproduct', (req, res) => {
+    if (req.method === 'GET') {
+        res.send('This is a Get Request')
+
+    }else if (req.method === 'POST') {
+        res.send('This is a POST Request')
+
+    }else if (req.method === 'PUT') {
+        res.send('This is a PUT Request')
+    }
+    else if (req.method === 'DELETE') {
+        res.send('This is a DELETE Request')
+    }
+})
+
+
+
+// next() // to pass control to the next middleware function in the stack
+
+
+app.use('/', 
+    (req, res, next) => {
+
+        next()
+        console.log('First Request');
+
+    },
+    (req, res) => {
+
+        console.log('Second Request');
+        res.send('Second Request')
+        
+    }
+
+)
+
+
+
+
 app.listen(3000, () => {
     console.log('Server is running on port: 3000');
     

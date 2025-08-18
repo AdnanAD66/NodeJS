@@ -31,3 +31,11 @@ If by mistake we delete node_modules folder then we can restore it by running 'n
 now we donot need to restart our server manually when we make changes in our code.
 
 app.use(express.json()) // to parse incoming JSON requests
+
+app.use('/', (req, res) => {}) // to handle all incoming requests at the same route.
+
+in app.use if there is one route with '/' and one with '/products' then '/' will be executed first and '/products' will not be executed.
+
+so we should add the smaller route at the end 
+
+next() // to pass control to the next middleware function in the stack
