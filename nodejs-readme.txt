@@ -20,7 +20,7 @@ NodeJS is non-blocking io because of Libuv.
 
 // ExpressJS
 
-npm init
+npm init or npm init -y // to create package.json file
 
 npm install express
 
