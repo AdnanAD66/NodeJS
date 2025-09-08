@@ -12,26 +12,26 @@ const app = express()
 app.use(express.json())
 
 
-app.use('/signup', async (req, res) => {
+// app.use('/signup', async (req, res) => {
     
-    const data = {
-        userName : "Ali",
-        email: "ali@gmail.com",
-        password : "12345"
-    }
+//     const data = {
+//         userName : "Ali",
+//         email: "ali@gmail.com",
+//         password : "12345"
+//     }
     
-    const user = await User.insertOne(data)
+//     const user = await User.insertOne(data)
 
-    user.save()
+//     user.save()
 
-    res.send('User Signup')
-})
+//     res.send('User Signup')
+// })
 
 
 
-app.use('/', (req, res) => {
-    res.send('Hello World')
-})
+// app.use('/', (req, res) => {
+//     res.send('Hello World')
+// })
 
 
 connectDB().then( () => {
