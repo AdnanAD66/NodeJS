@@ -7,7 +7,7 @@ app.use(express.json())
 
 const {MongoClient, ObjectId} = require('mongodb')
 
-const url = 'mongodb+srv://adnaniqbal:Q3drwSVU1KELCrfZ@cluster0.f0ecoxs.mongodb.net/'
+const url = 'mongodb+srv://user:pass@cluster0.f0ecoxs.mongodb.net/'
 
 const client = new MongoClient(url);
 
