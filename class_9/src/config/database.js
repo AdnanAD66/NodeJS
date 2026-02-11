@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // pass the database name in the end of the url if you want to conneted to specific database
-const url = 'mongodb+srv://adnaniqbal:Q3drwSVU1KELCrfZ@cluster0.f0ecoxs.mongodb.net/SMITB15'
+const url = 'mongodb+srv://user:pass@cluster0.f0ecoxs.mongodb.net/SMITB15'
 
 async function connectDB() {
   await mongoose.connect(url);
